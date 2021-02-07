@@ -1,0 +1,36 @@
+.c-heading{
+  @include fontInformation($size:36px, $weight:bold, $lineHeight:1.2)
+  @include txtShadow
+  position: relative;
+}
+
+.c-heading--about::after{
+  @include subHeadingInformation($subHeading:"Isobe.について")
+}
+.c-heading--services::after{
+  @include subHeadingInformation($subHeading:"サービス内容")
+}
+.c-heading--works::after{
+  @include subHeadingInformation($subHeading:"制作実績")
+}
+.c-heading--contact::after{
+  @include subHeadingInformation($subHeading:"お問い合わせ")
+}
+
+@media (max-width:$sm){
+  .c-heading{
+    font-size: 24px;
+  }
+  .c-heading--about::after{
+    @include subHeadingInformation($subHeading:"Isobe.について", $top:24px, $left:8px)
+  }
+  .c-heading--services::after{
+    @include subHeadingInformation($subHeading:"サービス内容", $top:24px, $left:8px)
+  }
+  .c-heading--works::after{
+    @include subHeadingInformation($subHeading:"制作実績", $top:24px, $left:8px)
+  }
+  .c-heading--contact::after{
+    @include subHeadingInformation($subHeading:"お問い合わせ", $top:24px, $left:8px)
+  }
+}

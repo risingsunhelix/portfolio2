@@ -1,0 +1,30 @@
+.c-siteLogo{
+  @include fontInformation($size:32px, $weight:bold,$lineHeight:1, $color:rgba(255,255,255,0.8))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.3)
+  cursor:pointer;
+}
+.c-siteLogo:hover{
+  @include fontInformation($size:34px, $weight:bold,$lineHeight:1, $color:rgba(4,4,62,0.4))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.8)
+  transition:all 400ms;
+}
+
+.c-siteLogo.js-colorNaivy{
+  @include fontInformation($size:34px, $weight:bold,$lineHeight:1, $color:rgba(4,4,62,0.4))
+  transition:all 400ms;
+}
+@media (max-width:$sm){
+  .c-siteLogo{
+    font-size: 20px;
+  }
+  .c-siteLogo:hover{
+    @include fontInformation($size:22px, $weight:bold,$lineHeight:1, $color:rgba(255,255,255,0.8))
+    @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.8)
+    transition:all 400ms;
+  }
+
+  .c-siteLogo.js-colorNaivy{
+    @include fontInformation($size:22px, $weight:bold,$lineHeight:1, $color:rgba(255,255,255,0.8))
+    transition:all 400ms;
+  }
+}

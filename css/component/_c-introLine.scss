@@ -1,0 +1,9 @@
+.c-introLine{
+  @include fontInformation($size:16px)
+  @include txtShadow
+}
+@media (max-width:$sm){
+  .c-introLine{
+    @include fontInformation($size:14px)
+  }
+}

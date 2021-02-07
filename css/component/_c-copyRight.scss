@@ -1,0 +1,8 @@
+.c-copyRight{
+  @include fontInformation($style:italic,$size:14px)
+}
+@media (max-width:$sm){
+  .c-copyRight{
+    @include fontInformation($style:italic,$size:9px)
+  }
+}
